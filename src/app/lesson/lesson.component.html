@@ -1,0 +1,18 @@
+<section class="globalSection">
+<h1>User Details</h1>
+<div class="cardsContainer">
+<mat-card class="userCards" *ngFor="let user of UserList">
+    <mat-card-title>
+        User: {{user.firstName}} {{user.lastName}}
+    </mat-card-title>
+    <mat-card-content>
+        Phone Number: {{user.phoneNumber}}
+        <br>
+        Email Address: {{user.emailAddress}}
+    </mat-card-content>
+    <mat-card-actions align="end">
+        <button>DELETE</button>
+    </mat-card-actions>
+ </mat-card>
+</div> 
+</section>

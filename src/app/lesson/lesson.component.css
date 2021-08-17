@@ -1,0 +1,16 @@
+.cardsContainer {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.userCards {
+  width: 25vw;
+  margin: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+.userCards:hover {
+  background: rgb(13, 182, 13);
+  color: white;
+}
