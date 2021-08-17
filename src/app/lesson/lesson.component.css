@@ -14,3 +14,11 @@
   background: rgb(13, 182, 13);
   color: white;
 }
+
+.newUser input {
+  margin: 15px;
+}
+
+.userInputCard {
+  background-color: rgba(144, 238, 144, 0.479);
+}

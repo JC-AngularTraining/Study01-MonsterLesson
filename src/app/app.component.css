@@ -1,3 +1,9 @@
+/* :host accesses the components selector css*/
+:host {
+  display: block;
+  background-color: ivory;
+}
+
 .toolbar {
   position: fixed;
   top: 0;
