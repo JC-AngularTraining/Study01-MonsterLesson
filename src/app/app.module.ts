@@ -8,12 +8,16 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-import { LessonComponent } from './lesson/lesson.component';
+import { Example1Component } from './Rountings/example1/example1.component';
+import { Example2Component } from './Rountings/example2/example2.component';
+import { UsersCardComponent } from './Rountings/example2/users-card/users-card.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LessonComponent
+    Example2Component,
+    Example1Component,
+    UsersCardComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,9 +25,9 @@ import { LessonComponent } from './lesson/lesson.component';
     BrowserAnimationsModule,
     FontAwesomeModule,
     MatCardModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
