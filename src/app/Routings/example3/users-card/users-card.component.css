@@ -1,0 +1,24 @@
+.cardsContainer {
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.userCards {
+  width: 25vw;
+  margin: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+.userCards:hover {
+  background: lightseagreen;
+  color: blue;
+}
+
+.newUser input {
+  margin: 15px;
+}
+
+.userInputCard {
+  background-color: lightskyblue;
+}

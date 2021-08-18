@@ -1,0 +1,39 @@
+{
+  "serverUsers": [
+    {
+      "id": 1,
+      "firstName": "Justin",
+      "lastName": "Heath",
+      "phoneNumber": "123456",
+      "emailAddress": "krish.lee@learningcontainer.com"
+    },
+    {
+      "id": 2,
+      "firstName": "Steve",
+      "lastName": "Potts",
+      "phoneNumber": "123456",
+      "emailAddress": "racks.jacson@learningcontainer.com"
+    },
+    {
+      "id": 3,
+      "firstName": "Sandra",
+      "lastName": "Awesome",
+      "phoneNumber": "111111111111",
+      "emailAddress": "sa@aol.com"
+    },
+    {
+      "id": 4,
+      "firstName": "Jenny",
+      "lastName": "Green",
+      "phoneNumber": "222222222",
+      "emailAddress": "devid.neo@learningcontainer.com"
+    },
+    {
+      "id": 5,
+      "firstName": "Hugh",
+      "lastName": "Legend",
+      "phoneNumber": "111111111",
+      "emailAddress": "jone.mac@learningcontainer.com"
+    }
+  ]
+}

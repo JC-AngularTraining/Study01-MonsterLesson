@@ -1,5 +1,5 @@
 <section class="globalSection">
-  <h1>{{ title }}</h1>
+  <h1>{{ titleChild }}</h1>
 
   <form
     class="newUser"
@@ -24,7 +24,7 @@
   </form>
 
   <div class="cardsContainer">
-    <mat-card class="userCards" *ngFor="let user of UserList">
+    <mat-card class="userCards" *ngFor="let user of UserListChild">
       <mat-card-title>
         User: {{ user.firstName }} {{ user.lastName }}
       </mat-card-title>
@@ -35,10 +35,7 @@
       </mat-card-content>
 
       <mat-card-actions align="end">
-        <button
-          (click)="removeUserChild.emit(user.userId)"
-          class="btn btn-danger"
-        >
+        <button (click)="removeUserChild.emit(user.id)" class="btn btn-danger">
           DELETE
         </button>
       </mat-card-actions>
