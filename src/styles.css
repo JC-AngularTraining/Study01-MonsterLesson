@@ -8,6 +8,7 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
 .globalSection {
-  margin: 70px;
+  padding: 20px 50px;
 }

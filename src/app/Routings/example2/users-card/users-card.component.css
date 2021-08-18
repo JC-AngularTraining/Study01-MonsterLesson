@@ -11,8 +11,8 @@
 }
 
 .userCards:hover {
-  background: pink;
-  color: red;
+  background: #ff1493;
+  color: white;
 }
 
 .newUser input {
@@ -20,5 +20,6 @@
 }
 
 .userInputCard {
-  background-color: rgba(255, 192, 203, 0.479);
+  background-color: #ff69b4;
+  max-width: 50vw;
 }

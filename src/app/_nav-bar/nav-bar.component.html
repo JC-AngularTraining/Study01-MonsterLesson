@@ -1,0 +1,32 @@
+<mat-toolbar id="navBar-Main">
+  <nav id="navBar-Left">
+    <a routerLink="/home" routerLinkActive="active">
+      <img
+        width="60"
+        alt="Monster Logo"
+        src="https://cdn.fs.teachablecdn.com/r7WsywFORGWeBgnvFegu"
+      />
+      {{ title }}
+    </a>
+  </nav>
+
+  <nav id="navBar-Right">
+    <a routerLink="/home" routerLinkActive="active" title="Home">Home</a>
+    <a routerLink="/example1" routerLinkActive="active" title="example1"
+      >StandAlone</a
+    >
+    <a routerLink="/example2" routerLinkActive="active" title="example2"
+      >Parent2Child</a
+    >
+    <a routerLink="/example3" routerLinkActive="active" title="example3"
+      >UsingServerAndFETCH</a
+    >
+    <i class="fab fa-facebook-square"></i>
+    <a href="https://monsterlessons-academy.com/" target="_blank">
+      <fa-icon [icon]="faGlobeAmericas" class="brandIcon"></fa-icon>
+    </a>
+  </nav>
+</mat-toolbar>
+<div>
+  <router-outlet></router-outlet>
+</div>

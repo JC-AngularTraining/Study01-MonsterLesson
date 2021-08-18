@@ -1,0 +1,6 @@
+/* :host accesses the components selector css*/
+:host {
+  display: block;
+  height: 93.5vh;
+  background-color: pink;
+}

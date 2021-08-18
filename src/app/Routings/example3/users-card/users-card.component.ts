@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
-import { I_User } from '../Model/UserModel';
+import { I_User } from '../model/UserModel';
 
 @Component({
   selector: 'app-users-card3',

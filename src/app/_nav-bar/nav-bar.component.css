@@ -1,0 +1,54 @@
+a {
+  cursor: pointer;
+}
+
+#navBar-Main {
+  background-color: #1a9cdb;
+  /* background-color: rgb(13, 182, 13); */
+  border: 2px solid #1a9cdb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+#navBar-Left img {
+  margin: 0 16px;
+}
+
+#navBar-Left a {
+  font-family: "cooper black";
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+#navBar-Right {
+  display: flex;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+#navBar-Right a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5em;
+}
+
+#navBar-Right a:hover,
+#navBar-Left a:hover {
+  color: lightblue;
+}
+#navBar-Right a.active {
+  color: blue;
+}
+
+.brandIcon {
+  color: white;
+  font-size: 30px;
+  margin: 0 16px;
+}
+
+.brandIcon:hover {
+  color: lightblue;
+}
