@@ -1,24 +1,36 @@
-<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
-  <ng-container matColumnDef="id">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
-    <td mat-cell *matCellDef="let element">{{ element.id }}</td>
-  </ng-container>
+<Section matSort class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+    <ng-container matColumnDef="id">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>No.</th>
+      <td mat-cell *matCellDef="let element">{{ element.id }}</td>
+    </ng-container>
 
-  <ng-container matColumnDef="Reference">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>Reference</th>
-    <td mat-cell *matCellDef="let element">{{ element.Reference }}</td>
-  </ng-container>
+    <ng-container matColumnDef="Reference">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Reference</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.Reference }}
+      </td>
+    </ng-container>
 
-  <ng-container matColumnDef="Link">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>Link</th>
-    <td mat-cell *matCellDef="let element">{{ element.Link }}</td>
-  </ng-container>
+    <ng-container matColumnDef="Link">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Link</th>
+      <td mat-cell *matCellDef="let element">
+        <a href="{{ element.Link }}" target="_blank">{{ element.Link }}</a>
+      </td>
+    </ng-container>
 
-  <ng-container matColumnDef="Comments">
-    <th mat-header-cell *matHeaderCellDef mat-sort-header>Comments</th>
-    <td mat-cell *matCellDef="let element">{{ element.Comments }}</td>
-  </ng-container>
+    <ng-container matColumnDef="Comments">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Comments</th>
+      <td mat-cell *matCellDef="let element">{{ element.Comments }}</td>
+    </ng-container>
 
-  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-</table>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  <mat-paginator
+    [pageSizeOptions]="[5, 10, 20]"
+    showFirstLastButtons
+    aria-label="Select page of periodic elements"
+  >
+  </mat-paginator>
+</Section>

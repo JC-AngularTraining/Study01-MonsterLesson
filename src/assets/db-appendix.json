@@ -1,62 +1,77 @@
 [
   {
     "id": 1,
-    "Reference": "Hydrogen",
-    "Link": "www.google.com",
-    "Comments": "H"
+    "Reference": "My GitHub Organisation of Repos",
+    "Link": "https://github.com/JC-NC-Apprenticeship",
+    "Comments": "List of my repos and course material from NorthCoders."
   },
   {
     "id": 2,
-    "Reference": "Helium",
-    "Link": "www.google.com",
-    "Comments": "He"
+    "Reference": "TS Reference Video",
+    "Link": "https://youtu.be/BCg4U1FzODs",
+    "Comments": "Brad Video on TS really useful."
   },
   {
     "id": 3,
-    "Reference": "Lithium",
-    "Link": "www.google.com",
-    "Comments": "Li"
+    "Reference": "TS another video",
+    "Link": "https://youtu.be/RXZoCljqYOE",
+    "Comments": "As always monster does a good job."
   },
   {
     "id": 4,
-    "Reference": "Beryllium",
-    "Link": "www.google.com",
-    "Comments": "Be"
+    "Reference": "Video on Testing (T.D.D.)",
+    "Link": "https://youtu.be/MLTRHc5dk6s",
+    "Comments": "Good reference, still not good at this but I hope to improve in the future"
   },
   {
     "id": 5,
-    "Reference": "Boron",
-    "Link": "www.google.com",
-    "Comments": "B"
+    "Reference": "Useful Video on NPM",
+    "Link": "https://youtu.be/jHDhaSSKmB0",
+    "Comments": "Great help for getting to understand Pack.json and what is actually happening"
   },
   {
     "id": 6,
-    "Reference": "Carbon",
-    "Link": "www.google.com",
-    "Comments": "C"
+    "Reference": "ES6 vs CommonJS",
+    "Link": "https://youtu.be/mK54Cn4ceac",
+    "Comments": "Useful video on the changing landscape of JS"
   },
   {
     "id": 7,
-    "Reference": "Nitrogen",
-    "Link": "www.google.com",
-    "Comments": "N"
+    "Reference": "Async Behaviour",
+    "Link": "https://youtu.be/PoRJizFvM7s",
+    "Comments": "Still getting my head around but getting there."
   },
   {
     "id": 8,
-    "Reference": "Oxygen",
-    "Link": "www.google.com",
-    "Comments": "O"
+    "Reference": "Local Json file in Angular",
+    "Link": "https://youtu.be/88b0hW6I9sk"
   },
   {
     "id": 9,
-    "Reference": "Fluorine",
-    "Link": "www.google.com",
-    "Comments": "F"
+    "Reference": "Converting JSON to TS Interface",
+    "Link": "https://marketplace.visualstudio.com/items?itemName=GregorBiswanger.json2ts",
+    "Comments": "This works so well I can see me using it all the time!!!"
   },
   {
     "id": 10,
-    "Reference": "Neon",
-    "Link": "www.google.com",
-    "Comments": "Ne"
+    "Reference": "Create an API in 30 Seconds",
+    "Link": "https://github.com/typicode/json-server",
+    "Comments": "This is simply AWESOME."
+  },
+  {
+    "id": 11,
+    "Reference": "TypeScript Documentation",
+    "Link": "https://www.typescriptlang.org/",
+    "Comments": "Not used these but will be useful in the future."
+  },
+  {
+    "id": 12,
+    "Reference": "Angular Material Docs",
+    "Link": "https://material.angular.io/"
+  },
+  {
+    "id": 13,
+    "Reference": "BootStrap",
+    "Link": "https://getbootstrap.com/"
   }
 ]

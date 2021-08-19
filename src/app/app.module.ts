@@ -7,6 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
+import { MatPaginatorModule } from '@angular/material/paginator';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -47,6 +48,7 @@ import { ReferencesComponent } from './Routings/references/references.component'
     MatToolbarModule,
     MatTableModule,
     MatSortModule,
+    MatPaginatorModule,
   ],
   providers: [UserServiceService],
   bootstrap: [AppComponent],
