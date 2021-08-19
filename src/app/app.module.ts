@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -41,12 +41,12 @@ import { ReferencesComponent } from './Routings/references/references.component'
     AppRoutingModule,
     BrowserAnimationsModule,
     FontAwesomeModule,
+    FormsModule,
+    HttpClientModule,
     MatCardModule,
     MatToolbarModule,
     MatTableModule,
     MatSortModule,
-    FormsModule,
-    HttpClientModule,
   ],
   providers: [UserServiceService],
   bootstrap: [AppComponent],

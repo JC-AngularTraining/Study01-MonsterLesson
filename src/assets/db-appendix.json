@@ -1,12 +1,62 @@
 [
-  { "position": 1, "name": "Hydrogen", "weight": 1.0079, "symbol": "H" },
-  { "position": 2, "name": "Helium", "weight": 4.0026, "symbol": "He" },
-  { "position": 3, "name": "Lithium", "weight": 6.941, "symbol": "Li" },
-  { "position": 4, "name": "Beryllium", "weight": 9.0122, "symbol": "Be" },
-  { "position": 5, "name": "Boron", "weight": 10.811, "symbol": "B" },
-  { "position": 6, "name": "Carbon", "weight": 12.0107, "symbol": "C" },
-  { "position": 7, "name": "Nitrogen", "weight": 14.0067, "symbol": "N" },
-  { "position": 8, "name": "Oxygen", "weight": 15.9994, "symbol": "O" },
-  { "position": 9, "name": "Fluorine", "weight": 18.9984, "symbol": "F" },
-  { "position": 10, "name": "Neon", "weight": 20.1797, "symbol": "Ne" }
+  {
+    "id": 1,
+    "Reference": "Hydrogen",
+    "Link": "www.google.com",
+    "Comments": "H"
+  },
+  {
+    "id": 2,
+    "Reference": "Helium",
+    "Link": "www.google.com",
+    "Comments": "He"
+  },
+  {
+    "id": 3,
+    "Reference": "Lithium",
+    "Link": "www.google.com",
+    "Comments": "Li"
+  },
+  {
+    "id": 4,
+    "Reference": "Beryllium",
+    "Link": "www.google.com",
+    "Comments": "Be"
+  },
+  {
+    "id": 5,
+    "Reference": "Boron",
+    "Link": "www.google.com",
+    "Comments": "B"
+  },
+  {
+    "id": 6,
+    "Reference": "Carbon",
+    "Link": "www.google.com",
+    "Comments": "C"
+  },
+  {
+    "id": 7,
+    "Reference": "Nitrogen",
+    "Link": "www.google.com",
+    "Comments": "N"
+  },
+  {
+    "id": 8,
+    "Reference": "Oxygen",
+    "Link": "www.google.com",
+    "Comments": "O"
+  },
+  {
+    "id": 9,
+    "Reference": "Fluorine",
+    "Link": "www.google.com",
+    "Comments": "F"
+  },
+  {
+    "id": 10,
+    "Reference": "Neon",
+    "Link": "www.google.com",
+    "Comments": "Ne"
+  }
 ]
