@@ -3,6 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatTableModule } from '@angular/material/table';
+import { MatSortModule } from '@angular/material/sort';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -19,6 +21,7 @@ import { UserServiceService } from './Routings/example3/services/user-service.se
 import { NavBarComponent } from './_nav-bar/nav-bar.component';
 import { PageNotFoundComponent } from './_page-not-found/page-not-found.component';
 import { HomePageComponent } from './Routings/home-page/home-page.component';
+import { ReferencesComponent } from './Routings/references/references.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +34,7 @@ import { HomePageComponent } from './Routings/home-page/home-page.component';
     NavBarComponent,
     PageNotFoundComponent,
     HomePageComponent,
+    ReferencesComponent,
   ],
   imports: [
     BrowserModule,
@@ -39,6 +43,8 @@ import { HomePageComponent } from './Routings/home-page/home-page.component';
     FontAwesomeModule,
     MatCardModule,
     MatToolbarModule,
+    MatTableModule,
+    MatSortModule,
     FormsModule,
     HttpClientModule,
   ],

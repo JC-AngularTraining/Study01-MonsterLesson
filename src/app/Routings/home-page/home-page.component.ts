@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home-page.component.css'],
 })
 export class HomePageComponent implements OnInit {
-  mainTitle = `Justin's First Angular App`;
+  mainTitle = `Justin's First Angular App!!`;
   mainSubTitle = `Learnings from Monster Lessons`;
   constructor() {}
 
