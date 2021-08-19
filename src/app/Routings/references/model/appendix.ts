@@ -3,4 +3,6 @@ export interface I_Appendix {
   reference: string;
   link: string;
   comments?: string;
+  Type: 'Documentation' | 'Video';
+  Topic: 'TypeScript' | 'Testing' | 'JavaScript' | 'Data' | 'Angular';
 }

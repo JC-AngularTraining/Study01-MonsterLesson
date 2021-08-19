@@ -6,3 +6,13 @@
 th.mat-sort-header-sorted {
   color: black;
 }
+
+.refFilters {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+th.mat-header-cell,
+td.mat-cell {
+  padding-left: 10px;
+}

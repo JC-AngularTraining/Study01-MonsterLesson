@@ -8,6 +8,9 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatTableModule } from '@angular/material/table';
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatButtonModule } from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -49,6 +52,9 @@ import { ReferencesComponent } from './Routings/references/references.component'
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
+    MatInputModule,
+    MatSelectModule,
+    MatButtonModule,
   ],
   providers: [UserServiceService],
   bootstrap: [AppComponent],
