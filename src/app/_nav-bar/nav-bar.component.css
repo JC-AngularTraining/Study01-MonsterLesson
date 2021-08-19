@@ -33,6 +33,7 @@ a {
   text-decoration: none;
   color: white;
   padding: 0.5em;
+  padding-left: 10px;
 }
 
 #navBar-Right a:hover,

@@ -1,4 +1,4 @@
-import { AfterContentInit, Component, ViewChild, OnInit } from '@angular/core';
+import { Component, ViewChild, OnInit, AfterViewInit } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
@@ -7,11 +7,11 @@ import AppendixData from '../../../assets/db-appendix.json';
 import { I_Appendix } from './model/appendix';
 
 @Component({
-  selector: 'app-references',
-  templateUrl: './references.component.html',
-  styleUrls: ['./references.component.css'],
+  selector: 'app-table1',
+  templateUrl: './table1.component.html',
+  styleUrls: ['./table1.component.css'],
 })
-export class ReferencesComponent implements OnInit {
+export class Table1Component implements OnInit, AfterViewInit {
   filterValues: any = {};
   filterSelectObj: any = [];
   displayedColumns: string[] = ['id', 'Reference', 'Link', 'Comments'];

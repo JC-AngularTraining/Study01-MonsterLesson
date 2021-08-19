@@ -25,7 +25,8 @@ import { UserServiceService } from './Routings/example3/services/user-service.se
 import { NavBarComponent } from './_nav-bar/nav-bar.component';
 import { PageNotFoundComponent } from './_page-not-found/page-not-found.component';
 import { HomePageComponent } from './Routings/home-page/home-page.component';
-import { ReferencesComponent } from './Routings/references/references.component';
+import { Table1Component } from './Routings/table1/table1.component';
+import { Table2Component } from './Routings/table2/table2.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ReferencesComponent } from './Routings/references/references.component'
     NavBarComponent,
     PageNotFoundComponent,
     HomePageComponent,
-    ReferencesComponent,
+    Table1Component,
+    Table2Component,
   ],
   imports: [
     BrowserModule,
