@@ -10,5 +10,15 @@ body {
 }
 
 .globalSection {
-  padding: 20px 50px;
+  padding: 0px 50px;
+}
+
+h1.globalHeader {
+  font-family: "cooper black";
+  color: coral;
+  font-size: 2.5em;
+  padding: 25px;
+  text-align: center;
+  padding-top: 1em;
+  text-shadow: 2px 2px lightgray;
 }
