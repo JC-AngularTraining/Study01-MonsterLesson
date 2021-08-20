@@ -13,7 +13,7 @@ export class UserServiceService {
     return this.http.get<I_User[]>('http://localhost:3000/serverUsers');
   }
 
-  removeUserService(id: string): Observable<{}> {
+  removeUserService(id: number): Observable<{}> {
     return this.http.delete(`http://localhost:3000/serverUsers/${id}`);
   }
 

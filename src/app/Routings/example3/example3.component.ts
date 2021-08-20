@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { I_User } from './model/UserModel';
+import { I_User, I_Example3Component } from './model/UserModel';
 import { UserServiceService } from './services/user-service.service';
 
 @Component({
@@ -8,8 +8,8 @@ import { UserServiceService } from './services/user-service.service';
   templateUrl: './example3.component.html',
   styleUrls: ['./example3.component.css'],
 })
-export class Example3Component implements OnInit {
-  public currentTitle: string = 'User Details from API';
+export class Example3Component implements OnInit, I_Example3Component {
+  public title: string = 'Example of Working with an API';
   public UserListNew!: I_User[];
 
   constructor(private userService: UserServiceService) {}
@@ -21,14 +21,14 @@ export class Example3Component implements OnInit {
     });
   }
 
-  removeUser(id: string): void {
+  removeUser(id: number): void {
     // console.log(`Delete Button Working`)
     this.userService.removeUserService(id).subscribe(() => {
       this.UserListNew = this.UserListNew.filter((user) => user.id !== id);
     });
   }
 
-  onSubmit(data: I_User) {
+  onSubmit(data: I_User): void {
     // e.preventDefault()
     // data.id = this.UserListNew.length + 1;
     // console.log(data);

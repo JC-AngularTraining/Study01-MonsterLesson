@@ -23,12 +23,13 @@ export class Example1Component implements OnInit, I_Example1Component {
     this.UserList = this.UserList.filter((user) => user.userId !== id);
   }
 
-  onSubmit(data: I_User): void {
+  onSubmit(data: Omit<I_User, 'userId'>): void {
     // TS - Declared the type on the argument and set to void as no return.
     // e.preventDefault()
-    data.userId = this.UserList.length + 1;
+    const newData: I_User = { ...data, userId: this.UserList.length + 1 };
+    // data.userId = this.UserList.length + 1;
     // console.log(data)
-    this.UserList.push(data);
+    this.UserList.push(newData);
     // console.log(this.UserList)
   }
 }

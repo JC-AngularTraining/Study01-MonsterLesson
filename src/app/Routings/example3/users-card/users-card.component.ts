@@ -10,7 +10,7 @@ import { I_User } from '../model/UserModel';
 export class UsersCard3Component implements OnInit {
   @Input() titleChild!: string;
   @Input() UserListChild!: I_User[];
-  @Output() removeUserChild = new EventEmitter<string>();
+  @Output() removeUserChild = new EventEmitter<number>();
   @Output() onSubmitChild = new EventEmitter<I_User>();
 
   constructor() {}

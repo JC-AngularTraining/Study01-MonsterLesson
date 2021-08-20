@@ -11,7 +11,7 @@ export class UsersCard2Component implements OnInit {
   @Input() titleChild!: string;
   @Input() UserListChild!: I_User[];
   @Output() removeUserChild = new EventEmitter<number>();
-  @Output() onSubmitChild = new EventEmitter<object>();
+  @Output() onSubmitChild = new EventEmitter<I_User>();
 
   constructor() {}
 
