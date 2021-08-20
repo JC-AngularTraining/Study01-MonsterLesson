@@ -4,7 +4,7 @@ import { MatTableDataSource } from '@angular/material/table';
 import { MatPaginator } from '@angular/material/paginator';
 
 import AppendixData from '../../../assets/db-appendix.json';
-import { I_Appendix } from './model/appendix';
+import { I_Appendix, I_filterSelectObj } from './model/appendix';
 
 @Component({
   selector: 'app-table1',
@@ -13,6 +13,7 @@ import { I_Appendix } from './model/appendix';
 })
 export class Table1Component implements OnInit, AfterViewInit {
   filterValues: any = {};
+  // filterSelectObj!: I_filterSelectObj[];
   filterSelectObj: any = [];
   displayedColumns: string[] = ['id', 'Reference', 'Link', 'Comments'];
   dataSource = new MatTableDataSource<I_Appendix>(AppendixData);
@@ -46,24 +47,25 @@ export class Table1Component implements OnInit, AfterViewInit {
     ];
   }
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.getRemoteData();
 
     // Overrride default filter behaviour of Material Datatable
     this.dataSource.filterPredicate = this.createFilter();
   }
 
-  ngAfterViewInit() {
+  ngAfterViewInit(): void {
     this.dataSource.sort = this.sort;
     this.dataSource.paginator = this.paginator;
   }
 
-  applyFilter(e: string) {
+  applyFilter(e: string): void {
     // console.log(e);
     this.dataSource.filter = e.trim().toLowerCase();
   }
 
   // Get Uniqu values from columns to build filter
+  // getFilterObject(fullObj: I_Appendix[], key: string) {
   getFilterObject(fullObj: any, key: any) {
     const uniqChk: any = [];
     fullObj.filter((obj: any) => {
@@ -76,8 +78,9 @@ export class Table1Component implements OnInit, AfterViewInit {
   }
 
   // Get remote serve data using HTTP call
-  getRemoteData() {
-    this.filterSelectObj.filter((o: any) => {
+  getRemoteData(): void {
+    this.filterSelectObj.filter((o: I_filterSelectObj) => {
+      // console.log(o);
       o.options = this.getFilterObject(this.dataSource.data, o.columnProp);
     });
   }

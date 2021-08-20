@@ -6,3 +6,9 @@ export interface I_Appendix {
   Type: 'Documentation' | 'Video';
   Topic: 'TypeScript' | 'Testing' | 'JavaScript' | 'Data' | 'Angular';
 }
+
+export interface I_filterSelectObj {
+  name: string;
+  columnProp: string;
+  options: [];
+}
